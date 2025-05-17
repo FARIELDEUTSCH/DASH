@@ -27,6 +27,7 @@ max_year = int(df['ANIO'].max())
 # Inicializar la aplicación con tema Bootstrap
 app = Dash(__name__, external_stylesheets=[dbc.themes.CERULEAN])
 
+server = app.server
 # Opciones para los controles
 time_options = [
     {'label': 'Año', 'value': 'ANIO'},
